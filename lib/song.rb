@@ -49,6 +49,7 @@ class Song
     nam = c[0][1].gsub(".mp3", "")
     track = self.new
     track.name = c[0] 
+    track
     
   end 
   
