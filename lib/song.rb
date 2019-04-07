@@ -48,7 +48,7 @@ class Song
     c = song.split(' - ')
     nam = c[0][1].gsub(".mp3", "")
     track = self.new
-    track.name = nam 
+    track.name = c[0] 
     
   end 
   
