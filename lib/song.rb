@@ -56,6 +56,18 @@ class Song
     song.name = mp3_format
     song.artist = artist
     song
+
+     row = filename
+
+       data = row.split(" - ")
+      artist_name = data[0]
+      song_name = data[1].gsub(".mp3", "")
+
+     song = self.new
+    song.name = song_name
+    song.artist_name = artist_name
+    song
+    
 end
   
   
