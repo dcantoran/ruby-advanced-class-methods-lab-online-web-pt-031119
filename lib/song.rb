@@ -9,8 +9,8 @@ class Song
   end 
   
   def self.create_by_name(n_string)
-    prop = self.new 
-    prop.name = n_string
+    prop = self.create
+    prop.name = 
     prop.save
     prop
   end 
