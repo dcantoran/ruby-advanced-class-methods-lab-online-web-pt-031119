@@ -48,12 +48,13 @@ class Song
 
     # row = song
     # data = row.split(" - ")
-      artist_name = data[0]
-      song_name = data[1].gsub(".mp3", "")
+    arr = song.split(" - ")
+      artist = data[0]
+      mp3_format = arr[1].gsub(".mp3", "")
 
-     song = self.new
-    song.name = song_name
-    song.artist_name = artist_name
+    song = self.new
+    song.name = mp3_format
+    song.artist = artist
     song
 end
   
